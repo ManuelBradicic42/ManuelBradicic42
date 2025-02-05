@@ -13,16 +13,16 @@ const mainBody = {
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
+      url: "https://github.com/ManuelBradicic42",
     },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
-    },
+    // {
+    //   image: "fa-facebook",
+    //   url: "https://www.facebook.com/hashirshoaeb",
+    // },
+    // {
+    //   image: "fa-instagram",
+    //   url: "https://www.instagram.com/hashirshoaeb/",
+    // },
     {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/hashirshoaeb/",
