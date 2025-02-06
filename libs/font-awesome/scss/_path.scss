@@ -13,3 +13,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+.education-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between logo and text */
+}
+
+.logo-container {
+  flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.education-logo {
+  width: 80px; /* Adjust as needed */
+  height: auto;
+}

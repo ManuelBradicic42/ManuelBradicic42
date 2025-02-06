@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
+<style>
+    .left {
+        width: 30%;
+        padding: 20px;
+    }
+    .right {
+        width: 70%;
+        padding: 20px;
+    }
+    .education-block {
+        display: flex;
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+    .education-logo {
+    width: 130px;
+    height: auto;
+    }
+    .logo-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 15px; /* Space between logos */
+        flex-wrap: wrap; /* Allow wrapping if screen is too small */
+        justify-content: center;
+    }
+    li {
+        margin: 10px;
+    }
+    .img_logo_list {
+        width: 100px;
+        height: auto;
+    }
+</style>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,29 +111,22 @@
                 <div class="col-md-4 text-center">
                     <figure>
                         <img src="images/profile.jpg" alt="Your Image" class="img-fluid rounded">
-                        <figcaption>Me at a research conference</figcaption>
                     </figure>
                 </div>
                 <!-- Text on the Right -->
                 <div class="col-md-8">
                     <h2 class="heading">About Me</h2>
-                    <p class="mb-3">
-                        I am a computer scientist specialising in artificial intelligence and machine learning. I am currently pursuing an MSc in Machine Learning through a joint program at KTH Royal Institute of Technology (Sweden) and École Polytechnique Fédérale de Lausanne (EPFL, Switzerland).
+                    <p class="mb-3", style="margin-bottom: 20px;">
+                        I am a computer scientist specialising in artificial intelligence and machine learning. I am currently pursuing an MSc in Machine Learning through a joint program at <strong>KTH</strong> Royal Institute of Technology (Sweden) and École Polytechnique Fédérale de Lausanne (<strong>EPFL</strong>, Switzerland).
                     </p>
-                    <p class="mb-3">
-                        Previously, I worked at CERN in the Beam Instrumentation Group, where I applied machine learning to beam diagnostics, contributing to research on Schottky spectra analysis. I also conducted research as a computational neuroscience intern at Karolinska Institutet, where I worked on analysing brain signals obtained by electrodes.
+                    <p class="mb-3", style="margin-bottom: 20px;">
+                        Previously, I worked at <strong>CERN</strong> in the Beam Instrumentation Group, where I applied machine learning to beam diagnostics, contributing to research on Schottky spectra analysis. I also conducted research as a computational neuroscience intern at <strong>Karolinska Institutet</strong>, where I worked on analysing brain signals obtained by electrodes. Later, I joined the LTS4 group at EPFL and LuisierLab at Idiap Research Institute, focusing on AI applications in healthcare and life sciences.
                     </p>
-                    <p class="mb-3">
-                        Later, I joined the LTS4 group at EPFL and LuisierLab at Idiap Research Institute, focusing on AI applications in healthcare and life sciences.
+                    <p class="mb-3", style="margin-bottom: 20px;">
+                        I hold a BSc (Hons) in Computer Science from the <strong>University of Surrey</strong>, the UK, where I specialised in AI and conducted research on early diagnosis of neurodegenerative diseases by segmenting neurological layers in human retinal images.
                     </p>
-                    <p class="mb-3">
-                        I hold a BSc (Hons) in Computer Science from the University of Surrey, where I specialised in AI and conducted research on early diagnosis of neurodegenerative diseases by segmenting neurological layers in human retinal images.
-                    </p>
-                    <p class="mb-3">
+                    <p class="mb-3", style="margin-bottom: 20px;">
                         Additionally, I gained industry experience at Sky UK as an Associate Development Engineer and at Ericsson Sweden as an R&D Engineer. 
-                    </p>
-                    <p>
-                        Beyond academics, I am passionate about rowing, having won a gold medal in a national student competition with the University of Surrey Boat Club.
                     </p>
                 </div>
             </div>
@@ -106,65 +138,161 @@
 
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
+        <div class="logo-container">
             <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
+                <li><img src="images/idiap_logo.png" alt="Logo 1" class="img_logo_list"></li>
+                <li><img src="images/cern_logo.png" alt="Logo 2" class="img_logo_list"></li>
+                <li><img src="images/logo_karolinska.jpeg" alt="Logo 3" class="img_logo_list"></li>
+                <li><img src="images/ericsson_logo.png" alt="Logo 4" class="img_logo_list"></li>
+                <li><img src="images/sky_logo.png" alt="Logo 5" class="img_logo_list"></li>
             </ul>
         </div>
+
+        
+        <div id="experience-timeline">
+            <div data-date="September 2024 – Present">
+                <h3>EPFL & IDIAP, Lausanne, Switzerland</h3>
+                <h4>Master thesis student</h4>
+                <p>
+                Designing biologically informed networks using prior knowledge (KEGG and GO) for better ALS patient stratification.
+                </p>
+            </div>
+
+            <div data-date="June 2024 – September 2024">
+                <h3>CERN, The European Organization for Nuclear Research, Geneva, Switzerland</h3>
+                <h4>Machine Learning Intern</h4>
+                <p>
+                Developed a system to control beam stability in the Large Hadron Collider by applying machine learning
+                techniques to capture the signal’s intrinsic dimensionality.
+                <br><br>
+                Source: <a href="https://repository.cern/records/b5b6j-kh066">Archive</a>, <a href="https://indico.cern.ch/event/1435014/contributions/6038248/attachments/2903263/5093436/BradicicManuel_Schottky_spectra_ML_2.pdf">Poster</a>, <a href="https://indico.cern.ch/event/1452073/contributions/6113019/attachments/2922822/5130270/SchottkySignal_BM.pdf">Presentation</a>,
+                </p>
+            </div>
+
+            <div data-date="November 2023 – June 2024">
+                <h3>Karolinska Institutet, Stockholm, Sweden</h3>
+                <h4>Computational Neuroscience Research Affiliate</h4>
+                <p>
+                    Conducted research on spatio-temporal dynamics of electrical field potentials, along high-density silicone
+                    probes implanted in the prefrontal cortex of living mice, uncovering patterns and their co-activity.
+                <br><br>
+                Source: <a href="https://drive.google.com/file/d/15PCdANvlmFY1kQp_Q9DkVLCzflXbv0xl/view">Report</a>
+                </p>
+            </div>
+
+            <div data-date="March 2024 – June 2024">
+                <h3>Ericsson, Stockholm Sweden</h3>
+                <h4>R&D Engineer</h4>
+                <p>
+                    Research and development of product for Ericsson Inovation Park
+                </p>
+            </div>
+
+            <div data-date="July 2022 – Sept 2022">
+                <h3>University of Surrey, Guildford, The UK</h3>
+                <h4>Summer Research Intern</h4>
+                <p>
+                    Investigating SOTA models for hand action movements by identifying 21 hand joints    
+                </p>
+            </div>
+
+
+            <div data-date="July 2021 – July 2022">
+                <h3>Sky Sports, London, The UK</h3>
+                <h4>Associate Development Engineer</h4>
+                <p>
+                    End-to-end integration team responsible for identifying weaknesses in network metadata and worklow of IPTV. CI/CD Coverage.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logos List</title>
+        <style>
+            .logo-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                gap: 15px; /* Space between logos */
+                flex-wrap: wrap; /* Allow wrapping if screen is too small */
+                justify-content: center;
+            }
+            li {
+                margin: 10px;
+            }
+            img {
+                width: 100px;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body> -->
+    
+    
+    <!-- </body>
+    </html> -->
+    
+    <div id="education">
+        <h2 class="heading">Education</h2>
+
+        <!-- Start .education-block -->
+        <div class="education-block">
+            <div class="left">
+                <div class="education-logo">
+                    <img src="images/epfl_logo.png" class="education-logo" />
+                </div>
+            </div>
+            <div class="right">
+                <h3>École Polytechnique Fédérale de Lausanne (EPFL), Switzerland</h3>
+                <span class="education-date">Sept 2024 - Present</span>
+                <h4>Master of Science in Machine Learning</h4>
+            </div>    
+        </div>
+        <!-- End .education-block -->
+
+        <!-- Start .education-block -->
+        <div class="education-block">
+            <div class="left">
+                <div class="education-logo">
+                    <img src="images/kth_logo.png" class="education-logo" />
+                </div>
+            </div>
+            <div class="right">
+                <h3>Royal Institute of Technology (KTH), <br> Sweden</h3>
+                <span class="education-date">Sept 2023 - Present</span>
+                <h4>Master of Science in Machine Learning</h4>
+            </div>    
+        </div>
+        <!-- End .education-block -->
+
+        <!-- Start .education-block -->
+        <div class="education-block">
+            <div class="left">
+                <div class="education-logo">
+                    <img src="images/ussu_logo.png" class="education-logo" />
+                </div>
+            </div>
+            <div class="right">
+                <h3>University of Surrey, <br> The United Kingdom</h3>
+                <span class="education-date">Aug 2019 - June 2023 </span>
+                <h4>Bachelors of Science in Computer Science</h4>
+            </div>    
+        </div>
         <!-- End .education-block -->
     </div>
-    <!-- End #education -->
+
+
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -176,6 +304,7 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
+                        
                         <h3>Project Name Here</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.

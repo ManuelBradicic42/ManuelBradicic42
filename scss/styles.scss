@@ -651,7 +651,7 @@ footer {
 }
 
 .project-image {
-    float: left;
+    float: center;
 }
 
 .project-info {
@@ -953,9 +953,14 @@ footer {
     }
 
     .education-block {
+        display: flex;
+        width: 100%;
+        border: 1px solid #ccc;
+
         h3, span {
             float: none;
         }
+
     }
 
     .project-image {
